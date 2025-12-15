@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-lsb_release -i | grep Dist
+lsb_release -is
