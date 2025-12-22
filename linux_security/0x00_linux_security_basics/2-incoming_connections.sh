@@ -1,2 +1,2 @@
 #!/bin/bash
-input -A  
+sudo input -A  
