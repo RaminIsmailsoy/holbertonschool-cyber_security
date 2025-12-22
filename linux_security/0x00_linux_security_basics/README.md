@@ -37,11 +37,13 @@
 
 ## Tasks
 0. What secrets hold
-Write a bash script that shows you the last 5 logins session for users with their corresponding dates and times.
+
+   Write a bash script that shows you the last 5 logins session for users with their corresponding dates and times.
 
 
 1. Shows your Linux connections, not your social status!
-Write a bash script that display a list of network socket connections
+
+   Write a bash script that display a list of network socket connections
 
 - 1 You should run your code as privileged user root or sudoers.
 - 2 You should Show all sockets, including listening and non-listening sockets.
