@@ -27,29 +27,26 @@
 - How to configure and manage a firewall
 - How to identify and terminate malicious processes
 
-Working with Commands:
-How to use the ps and kill commands to identify and terminate malicious processes
-How to use the netstat and ss commands to monitor network traffic for suspicious activity
-How to use the nmap, lynis and tcpdump commands to analyze network traffic for suspicious behavior
-How to use iptables and ufw to manage the firewall rules on Linux systems
+
+## Working with Commands:
+- How to use the ps and kill commands to identify and terminate malicious processes
+- How to use the netstat and ss commands to monitor network traffic for suspicious activity
+- How to use the nmap, lynis and tcpdump commands to analyze network traffic for suspicious behavior
+- How to use iptables and ufw to manage the firewall rules on Linux systems
 
 
-Tasks
+## Tasks
 0. What secrets hold
-mandatory
 Write a bash script that shows you the last 5 logins session for users with their corresponding dates and times.
-
-You should run your code as privileged user. root or sudoers.
 
 
 1. Shows your Linux connections, not your social status!
-mandatory
 Write a bash script that display a list of network socket connections
 
-1 You should run your code as privileged user root or sudoers.
-2 You should Show all sockets, including listening and non-listening sockets.
-3 You should Display numerical addresses (IP addresses and port numbers).
-4 You should Limit the output to TCP sockets.
-5 You should Display the process information associated with each socket.
+- 1 You should run your code as privileged user root or sudoers.
+- 2 You should Show all sockets, including listening and non-listening sockets.
+- 3 You should Display numerical addresses (IP addresses and port numbers).
+- 4 You should Limit the output to TCP sockets.
+- 5 You should Display the process information associated with each socket.
 
  
