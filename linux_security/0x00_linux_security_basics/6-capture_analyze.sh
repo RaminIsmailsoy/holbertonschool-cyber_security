@@ -1,3 +1,3 @@
 #!/bin/bash
-tcpdump -c 5
+sudo tcpdump -c 5
 
