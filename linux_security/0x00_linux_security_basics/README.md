@@ -1,20 +1,20 @@
 # Linux Security Basics
 
-Learning Resources
+## Learning Resources
 
-What is the Shell
-What is kali linux
-File System Hierarchy
-Linux file system
-Linux Security Command
-What are the Advantages of Using Linux ) Cybersecurity
-Linux Networking
-How to Securely Transfer Files in Linux Using SCP
-How to Set Up a Firewall with UFW on Ubuntu
-Guide to the Linux Firewall
+- [What is the Shell](https://linuxcommand.org/lc3_lts0010.php)
+- [What is kali linux](https://www.kali.org/docs/introduction/what-is-kali-linux/)
+- [File System Hierarchy](https://www.pathname.com/fhs/)
+- [Linux file system](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+- [Linux Security Command](https://www.linuxteck.com/linux-security-command-cheat-sheet/)
+- [What are the Advantages of Using Linux ) Cybersecurity](https://blog.trainace.com/linux-security#:~:text=Linux%20is%20Great%20for%20Pentesting,it%20according%20to%20their%20needs.)
+- [Linux Networking](https://www.actualtechmedia.com/wp-content/uploads/2017/12/CUMULUS-NETWORKS-Linux101.pdf)
+- [How to Securely Transfer Files in Linux Using SCP](https://www.tecmint.com/scp-commands-examples/)
+- [How to Set Up a Firewall with UFW on Ubuntu](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+- [Guide to the Linux Firewall](https://phoenixnap.com/kb/iptables-linux)
 
 
-Learning Objectives
+## Learning Objectives
 
 What is Linux
 What is a Linux Command
