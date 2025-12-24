@@ -4,10 +4,15 @@
 
 ## holbertonscholl.com has the following global IPs
 13.39.187.93
+
 51.44.96.144
+
 15.237.205.60
+
 52.47.143.83
+
 52.47.114.157
+
 13.38.203.16
 
 ## There are folowing subdomains:
