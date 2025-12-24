@@ -1,4 +1,6 @@
-# https://www.shodan.io/search?query=hostname%3Aholbertonschool.com
+# To gather as much information as possible about the holbertonschool.com domain using Shodan
+
+## https://www.shodan.io/search?query=hostname%3Aholbertonschool.com
 
 ## holbertonscholl.com has the following global IPs
 13.39.187.93
