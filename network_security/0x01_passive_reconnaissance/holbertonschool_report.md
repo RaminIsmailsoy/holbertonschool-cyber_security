@@ -17,7 +17,9 @@
 
 ## There are folowing subdomains:
 apply.holbertonschool.com
+
 yriry2.holbertonschool.com
+
 read.holbertonschool.com
 
 ## Technologies and frameworks used within all subdomains of holbertonschool.com
