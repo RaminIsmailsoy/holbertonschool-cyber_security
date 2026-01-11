@@ -1,1 +1,1 @@
-tcp.flags == 0x001 and tcp.window_size == 1024 and tcp.dstport == 23
+tcp.flags == 1 and tcp.window_size == 1024 and tcp.dstport == 23
