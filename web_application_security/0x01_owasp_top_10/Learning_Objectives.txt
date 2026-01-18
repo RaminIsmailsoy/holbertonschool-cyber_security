@@ -9,10 +9,27 @@ The OWASP Foundation is the non-profit entity that ensures the project's long-te
 2. Why is injection dangerous?
 
 
+Injection flaws happen when untrusted data (such as user input) is sent to an interpreter as part of a command or query. Attackers can manipulate the input so that the system executes unintended commands, accessing, modifying, or deleting data—and even gaining control of the server.
+
+
 3. How does XSS affect web applications?
+Cross-Site Scripting (XSS) allows attackers to inject malicious scripts (usually JavaScript) into web pages viewed by other users. It affects web apps by enabling attackers to:
+
+Steal cookies and session tokens
+Hijack user accounts
+Deliver phishing or malware
+Redirect users to malicious sites
+This happens when untrusted data is included in a page without properly validating or escaping it.
+
 
 
 4. What is the risk of broken authentication?
+
+Broken authentication occurs when login and session mechanisms are insecure. Risks include:
+Accounts being hijacked due to weak passwords or session tokens
+Attackers assuming other users’ identities
+Bypassing multi-factor authentication or credential checks
+Flaws such as missing lockout controls, predictable session IDs, and insecure password storage significantly increase the likelihood of unauthorized access.
 
 
 5. Can you explain sensitive data exposure?
