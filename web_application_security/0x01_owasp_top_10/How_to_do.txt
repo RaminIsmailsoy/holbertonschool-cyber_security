@@ -1,0 +1,27 @@
+
+
+# Get password from a Base64 hash
+./1-xor_decoder.sh Dz58bWkmFhMqORUODiVvJRAWLhUTGRRoKA==
+
+
+
+http://web0x01.hbtn/a2/crypto_encoding_failure/login
+yosri
+Pa#26yILufJQQz0zOIqJLFK7w
+
+
+
+
+0	"John - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 918203"
+1	"Jimmy - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 32781850"
+2	"Dexter - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 811152675"
+3	"You - Visited Dexter - Sun Jan 18 12:01:56 2026 - UserID: 58263966"
+4	"You - Visited John - Sun Jan 18 12:02:09 2026 - UserID: 58263966"
+5	"You - Visited Jimmy - Sun Jan 18 12:02:14 2026 - UserID: 58263966"
+
+You - Followed Dexter - Sun Jan 18 12:03:50 2026 - UserID: 58263966
+You - Followed John - Sun Jan 18 12:03:52 2026 - UserID: 58263966
+You - Followed Jimmy - Sun Jan 18 12:03:54 2026 - UserID: 58263966
+
+FLAG_1/2:
+0bafba7593f6f8ed8ff976404a095f15
