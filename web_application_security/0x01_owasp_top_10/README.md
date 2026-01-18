@@ -1,12 +1,12 @@
 
 # Read or watch:
 
-    [OWASP Top 10:2021](https://owasp.org/Top10/2025/)
-    [Explaining the OWASP Top 10](https://www.youtube.com/watch?v=hryt-rCLJUA)
-    [Understanding the OWASP Top 10 with Examples](https://www.acunetix.com/blog/web-security-zone/owasp-top-10-2021-whats-new-whats-changed/)
-    [OWASP Top 10: The Big Picture](https://www.acunetix.com/blog/web-security-zone/owasp-top-10-2021-whats-new-whats-changed/)
-    [OWASP Top 10 Risks – Mitigation Strategies](https://www.imperva.com/learn/application-security/owasp-top-10/)
-    [How to Choose a Password](https://www.youtube.com/watch?v=3NjQ9b3pgIg)
+- [OWASP Top 10:2021](https://owasp.org/Top10/2025/)
+- [Explaining the OWASP Top 10](https://www.youtube.com/watch?v=hryt-rCLJUA)
+- [Understanding the OWASP Top 10 with Examples](https://www.acunetix.com/blog/web-security-zone/owasp-top-10-2021-whats-new-whats-changed/)
+- [OWASP Top 10: The Big Picture](https://www.acunetix.com/blog/web-security-zone/owasp-top-10-2021-whats-new-whats-changed/)
+- [OWASP Top 10 Risks – Mitigation Strategies](https://www.imperva.com/learn/application-security/owasp-top-10/)
+- [How to Choose a Password](https://www.youtube.com/watch?v=3NjQ9b3pgIg)
 
 # References:
 
