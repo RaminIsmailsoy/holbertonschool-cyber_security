@@ -1,0 +1,44 @@
+
+1. What is the OWASP Top 10?
+
+https://owasp.org/Top10/2025/
+The Open Worldwide Application Security Project (OWASP) is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.
+The OWASP Foundation is the non-profit entity that ensures the project's long-term success. Almost everyone associated with OWASP is a volunteer, including the OWASP board, chapter leaders, project leaders, and project members. We support innovative security research with grants and infrastructure.
+
+
+2. Why is injection dangerous?
+
+
+3. How does XSS affect web applications?
+
+
+4. What is the risk of broken authentication?
+
+
+5. Can you explain sensitive data exposure?
+
+
+6. Describe a security misconfiguration.
+
+
+7. What is XML External Entity (XXE)?
+
+
+8. How do broken access controls impact security?
+
+
+9. What are common web application security flaws?
+
+
+10. How to prevent Insecure Deserialization?
+
+
+11. What is the use of security logging and monitoring?
+
+
+12. Explain the risks of using components with known vulnerabilities.
+
+
+13. How can using APIs increase security risks?
+
+
