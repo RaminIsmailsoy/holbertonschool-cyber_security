@@ -34,18 +34,53 @@ Flaws such as missing lockout controls, predictable session IDs, and insecure pa
 
 5. Can you explain sensitive data exposure?
 
+Sensitive data exposure refers to failure to properly protect confidential information—like passwords, credit card numbers, or personal data. If encryption is weak or missing, data can be stolen or modified during storage or transmission.
+Key protections:
+Strong encryption for data at rest and in transit
+Proper handling of keys and sensitive fields
+Minimizing retention of unnecessary sensitive information
+Exposure increases risk of identity theft, fraud, and legal compliance failures.
+
+
 
 6. Describe a security misconfiguration.
+
+A security misconfiguration occurs when systems or applications are left in an insecure state—such as:
+Default accounts or passwords not changed
+Outdated software or unpatched systems
+Insecure security settings (e.g., open ports, verbose error messages)
+These mistakes leave systems open to exploitation because attackers can find weak points easily.
 
 
 7. What is XML External Entity (XXE)?
 
+XML External Entity (XXE) is a vulnerability that arises when an XML parser processes untrusted XML input and the attacker defines external entities. It can allow attackers to:
+Access internal server files
+Make internal network requests
+Cause denial of service
+Execute malicious actions
+It typically occurs in poorly configured or outdated XML parsers.
+
 
 8. How do broken access controls impact security?
+
+Broken access control means the system does not properly enforce who can access what. An attacker can:
+Access or modify other users’ data
+Escalate privileges (e.g., from user to admin)
+Perform unauthorized actions
+This undermines trust boundaries and violates the principle of least privilege.
 
 
 9. What are common web application security flaws?
 
+Aside from injection and XSS, common flaws include:
+Broken authentication and session management
+Sensitive data exposure
+Security misconfiguration
+Insecure deserialization
+Using vulnerable or outdated components
+Insufficient logging and monitoring
+These are the recurring top risks seen across apps.
 
 10. How to prevent Insecure Deserialization?
 
