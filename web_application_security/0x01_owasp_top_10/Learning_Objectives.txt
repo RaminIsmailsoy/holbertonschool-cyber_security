@@ -84,13 +84,34 @@ These are the recurring top risks seen across apps.
 
 10. How to prevent Insecure Deserialization?
 
+To prevent insecure deserialization—where attackers send manipulated serialized objects that execute unintended actions—developers should:
+Avoid accepting serialized data from untrusted sources
+Validate and sanitize input carefully
+Use safe serialization formats or libraries
+Apply integrity checks (signatures) before deserialization
+This mitigates remote code execution and other attacks.
+
 
 11. What is the use of security logging and monitoring?
+
+Security logging and monitoring helps detect attacks early. Without logs or alerting, breaches may go unnoticed for months, allowing attackers to dig deeper, pivot to other systems, or cause more damage.
+Proper logging supports incident response and forensic analysis.
 
 
 12. Explain the risks of using components with known vulnerabilities.
 
+Using third-party components (libraries, plugins, frameworks) that have known security issues is risky because attackers can exploit those weaknesses to:
+Gain unauthorized access
+Compromise data or server
+Escalate privileges
+Even if your own code is secure, vulnerable dependencies open up attack avenues.
+
 
 13. How can using APIs increase security risks?
 
+APIs expand the attack surface because they:
+Expose backend logic and data to clients
+Often lack proper authentication or rate limits
+Can expose sensitive operations that aren’t intended for general use
+APIs must be secured with authentication, authorization, input validation, and rate limiting to prevent abuse. APIs that aren’t properly secured become a gateway for attackers to access internal data and services. (General security practice)
 
