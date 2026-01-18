@@ -10,14 +10,14 @@
 
 # References:
 
-    OWASP Official Website
-    OWASP Top 10 - Wikipedia
-    OWASP Top 10 Proactive Controls
-    OWASP Cheat Sheet Series
-    OWASP ZAP - Web Application Penetration Testing Tool
-    OWASP Amass - Subdomain Enumeration Tool
-    OWASP Juice Shop - Vulnerable Web Application
-    OWASP Dependency-Check - Software Composition Analysis Tool
+- [OWASP Official Website](https://owasp.org/)
+- [OWASP Top 10 - Wikipedia](https://en.wikipedia.org/wiki/OWASP)
+- [OWASP Top 10 Proactive Controls](https://top10proactive.owasp.org/)
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
+- [OWASP ZAP - Web Application Penetration Testing Tool](https://www.zaproxy.org/)
+- [OWASP Amass - Subdomain Enumeration Tool](https://github.com/owasp-amass/amass)
+- [OWASP Juice Shop - Vulnerable Web Application](https://owasp.org/www-project-juice-shop/)
+- [OWASP Dependency-Check - Software Composition Analysis Tool](https://owasp.org/www-project-dependency-check/)
 
 # Learning Objectives
 
