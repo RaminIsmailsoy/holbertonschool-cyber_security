@@ -1,3 +1,7 @@
+Go to https://cod.hbtn.io/ start cyber_websec_0x01 and Ubuntu 22.04 containers machine.
+
+Add cyber_websec_0x01 machine's IP to /etc/hosts file on Ubuntu Server
+
 # Task 0. (A1:2021) - Broken Access Control
 
 Go to http://web0x01.hbtn/a1/hijack_session
