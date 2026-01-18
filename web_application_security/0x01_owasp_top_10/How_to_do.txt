@@ -25,3 +25,8 @@ You - Followed Jimmy - Sun Jan 18 12:03:54 2026 - UserID: 58263966
 
 FLAG_1/2:
 0bafba7593f6f8ed8ff976404a095f15
+
+
+
+Add <script>alert('XSS')</script> and then Update the profile.
+
