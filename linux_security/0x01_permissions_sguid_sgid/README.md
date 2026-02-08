@@ -1,15 +1,15 @@
-Permissions, SUID & SGID
+# Permissions, SUID & SGID
 
+## Resources
+## Read or watch:
 
-Resources
-Read or watch:
-
-    Permissions
-    Linux permissions
-    Finding Files With SUID and SGID
-    How to Use SUID and SGID on Linux
-    Understanding Linux Special permissions
-    What Is Umask and How to Use it Effectively
+- [Permissions] (https://linuxcommand.org/lc3_lts0090.php)
+- [Linux permissions] (https://www.redhat.com/en/blog/suid-sgid-sticky-bit)
+- [Finding Files With SUID and SGID] (https://www.geeksforgeeks.org/linux-unix/finding-files-with-suid-and-sgid-permissions-in-linux/)
+- [How to Use SUID and SGID on Linux] (https://www.howtogeek.com/656646/how-to-use-suid-sgid-and-sticky-bits-on-linux/)
+- [Understanding Linux Special permissions] (https://dev.to/mbayoun95/linux-special-permissions-a-comprehensive-guide-with-examples-31pg)
+(https://medium.com/@The_Anshuman/special-permissions-in-linux-f6045447448f)
+- [What Is Umask and How to Use it Effectively] (https://www.liquidweb.com/blog/what-is-umask-and-how-to-use-it-effectively/)
 
 man or help:
 
@@ -34,13 +34,6 @@ man or help:
     How can you audit file permissions changes on your system
     What is Umask in Linux
 
-1
- 2
-  3
-   4
-    5
-     6
-      7
 
 
 Task 0
