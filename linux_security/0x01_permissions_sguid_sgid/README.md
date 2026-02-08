@@ -9,6 +9,7 @@
 - [How to Use SUID and SGID on Linux] (https://www.howtogeek.com/656646/how-to-use-suid-sgid-and-sticky-bits-on-linux/)
 - [Understanding Linux Special permissions] (https://dev.to/mbayoun95/linux-special-permissions-a-comprehensive-guide-with-examples-31pg)
 (https://medium.com/@The_Anshuman/special-permissions-in-linux-f6045447448f)
+(https://blog.marcnuri.com/linux-file-permissions-complete-guide)
 - [What Is Umask and How to Use it Effectively] (https://www.liquidweb.com/blog/what-is-umask-and-how-to-use-it-effectively/)
 
 man or help:
