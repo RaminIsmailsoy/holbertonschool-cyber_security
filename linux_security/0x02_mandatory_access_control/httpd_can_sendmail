@@ -1,0 +1,50 @@
+boolean -D
+login -D
+interface -D
+user -D
+port -D
+node -D
+fcontext -D
+module -D
+ibendport -D
+ibpkey -D
+permissive -D
+login -a -s user_u -r 's0' ramin
+port -a -t http_port_t -r 's0' -p tcp 81
+module -d acpi
+module -d aisexec
+module -d amtu
+module -d bugzilla
+module -d cdrecord
+module -d cobbler
+module -d condor
+module -d cyphesis
+module -d eg25manager
+module -d fcoe
+module -d feedbackd
+module -d geoclue
+module -d git
+module -d iiosensorproxy
+module -d iscsi
+module -d isns
+module -d ksmtuned
+module -d likewise
+module -d livecd
+module -d nessus
+module -d numad
+module -d oddjob
+module -d openca
+module -d openct
+module -d publicfile
+module -d raid
+module -d rasdaemon
+module -d rlogin
+module -d rshd
+module -d soundserver
+module -d telnet
+module -d tgtd
+module -d thunderbird
+module -d tvtime
+module -d updfstab
+module -d usernetctl
+module -d vbetool
