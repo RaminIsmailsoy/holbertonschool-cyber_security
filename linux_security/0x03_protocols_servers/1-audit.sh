@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/ssh/sshd_config | grep -v ^# | grep -v ^$
+cat /etc/ssh/sshd_config | grep -Ev ^# | grep -Ev ^$
