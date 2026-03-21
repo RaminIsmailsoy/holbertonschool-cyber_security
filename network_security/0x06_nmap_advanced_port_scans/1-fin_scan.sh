@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sF "$1"
+sudo nmap -sF -p 80-85"$1"
