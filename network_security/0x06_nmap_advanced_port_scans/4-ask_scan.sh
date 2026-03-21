@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sS -p80,22,25 "$1" "$2"
+sudo nmap -sA -p"$2" --reason --host-timeout 1000ms "$1"
