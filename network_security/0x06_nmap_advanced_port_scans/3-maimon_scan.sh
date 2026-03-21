@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sM -vv -phttp,https,ftp,ssh,telnet $1
+sudo nmap -sM -vv -p80,443,21,22,23 $1
