@@ -1,9 +1,9 @@
 # Nmap Advanced Port Scans
 
-Resources
-Read or watch:
+## Resources
+## Read or watch:
 
-    Nmap documentation
+-[Nmap documentation]
     Nmap Advanced Scan
     Everything You Need to Know About Port Scanning
     Advanced Port Scanning techniques
@@ -16,9 +16,9 @@ Read or watch:
 
 References:
 
-    Port Scanning
+-[Port Scanning] (https://nmap.org/book/port-scanning-tutorial.html)
 
-Learning Objectives
+# Learning Objectives
 
 
     How to Use Nmap for Advanced Port Scans?
@@ -46,7 +46,7 @@ Null scans send empty TCP packets to a target. Open ports might silently accept 
 
 Write a bash script that executes a TCP NULL scan on a host, targeting ports 20 to 25.
 
-    Your script should accept host as an arguments $1.
+Your script should accept host as an arguments $1.
 
 
 Task #1
@@ -56,9 +56,9 @@ FIN scans are attractive because they can sometimes bypass basic firewalls and o
 
 Write a bash script that executes a FIN scan on a test network.The scan should identify potential stealth ports, focusing on ports 80 to 85.
 
-    Your script should accept host as an arguments $1.
-    Your script should use packet fragmentation to evade packet filters.
-    Your script should Adjust the timing option to 2 to reduce scan detectability.
+Your script should accept host as an arguments $1.
+Your script should use packet fragmentation to evade packet filters.
+Your script should Adjust the timing option to 2 to reduce scan detectability.
 
 Task #2
 
@@ -70,10 +70,10 @@ This technique, named for its illuminated packet headers, primarily receives res
 
 Write a bash script that executes a xmas scan on a test network.The scan should identify potential stealth ports, focusing on ports 440 to 450.
 
-    Your script should accept host as an arguments $1.
-    Your script should only show open (or possibly open) ports.
-    Your script should show all packets sent and received.
-    Your script should display the reason each port is set to a specific state.
+Your script should accept host as an arguments $1.
+Your script should only show open (or possibly open) ports.
+Your script should show all packets sent and received.
+Your script should display the reason each port is set to a specific state.
 
 
 Task #3
@@ -86,8 +86,8 @@ A Maimon scan sends TCP packets with both FIN and ACK flags set to determine por
 
 Write a bash script that executes a Maimon scan on a test network.The scan should identify potential stealth ports, focusing on scanning the following service ports: http, https, ftp, ssh, and telnet.
 
-    Your script should accept host as an arguments $1.
-    Your script should scan ports with high verbosity.
+Your script should accept host as an arguments $1.
+Your script should scan ports with high verbosity.
 
 Task #4
 The TCP ACK scan is a network probing technique used primarily to determine the filtering rules of a firewall. By sending a packet with the ACK flag set to various ports, and observing whether the target responds with an RST packet, security professionals can infer whether ports are statefully inspected.
@@ -96,10 +96,10 @@ You are a network administrator responsible for verifying the firewall rules for
 
 Write a bash script that performs a TCP ACK scan on a specified test network. The scan should identify potential stealth ports, focusing on ports 80, 22, 25.
 
-    Your script should accept host as an arguments $1.
-    Your script should accept ports as an arguments $2.
-    Your script should display the reason each port is set to a specific state.
-    Your script should enforce a time limit of 1000 milliseconds for each host response.
+Your script should accept host as an arguments $1.
+Your script should accept ports as an arguments $2.
+Your script should display the reason each port is set to a specific state.
+Your script should enforce a time limit of 1000 milliseconds for each host response.
 
 Task #5
 
@@ -111,9 +111,9 @@ This method is useful when more common scans like SYN are blocked, offering an a
 
 Write a bash script that performs a a TCP Window scan on a specified test network. The scan should identify potential stealth ports, in the range from 20 to 30, but exclude ports from 25to 28.
 
-    Your script should accept host as an arguments $1.
-    Your script should accept ports as an arguments $2.
-    Your script should accept a range of ports to exclude as an argument $3.
+Your script should accept host as an arguments $1.
+Your script should accept ports as an arguments $2.
+Your script should accept a range of ports to exclude as an argument $3.
 
 
 Task #6
@@ -126,9 +126,9 @@ The security team decides to use an advanced Nmap scan that manipulates TCP flag
 
 Write a bash script that executes a custom scan. The script should configure Nmap to send packets with all possible TCP flags set, targeting ports 80 to 90 on a specified host.
 
-    Your script should accept host as an arguments $1.
-    Your script should accept ports as an arguments $2.
-    Your script should save the output to the file custom_scan.txt.
-    Your script should redirect both error messages and standard output to ensure nothing appears on the screen.
+Your script should accept host as an arguments $1.
+Your script should accept ports as an arguments $2.
+Your script should save the output to the file custom_scan.txt.
+Your script should redirect both error messages and standard output to ensure nothing appears on the screen.
 
 
