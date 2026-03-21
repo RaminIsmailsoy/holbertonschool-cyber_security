@@ -3,23 +3,22 @@
 ## Resources
 ## Read or watch:
 
--[Nmap documentation]
-    Nmap Advanced Scan
-    Everything You Need to Know About Port Scanning
-    Advanced Port Scanning techniques
-    What is a Port Scanner and How Does it Work?
-    How to use Nmap to Scan for Open Ports?
-    Nmap to scan all ports
-    How to Use Nmap to Scan for Open Ports
-    How To Scan All Ports With NMap
-    Nmap: TCP and UDP port mapping
+- [Nmap documentation] (https://nmap.org/docs.html)
+- [Nmap Advanced Scan] (https://simplificandoredes.com/en/nmap-advanced-scan/)
+- [Everything You Need to Know About Port Scanning] (https://www.reflectiz.com/blog/everything-to-know-about-port-scanning/)
+- [Advanced Port Scanning techniques] (https://www.hackingloops.com/port-scanning-in-cybersecurity/)
+- [What is a Port Scanner and How Does it Work?] (https://www.varonis.com/blog/port-scanning-techniques)
+- [How to use Nmap to Scan for Open Ports?] (https://builtin.com/articles/nmap-port-scanning)
+- [Nmap to scan all ports] (https://linuxhint.com/scan-all-ports-nmap/)
+- [How to Use Nmap to Scan for Open Ports] (https://phoenixnap.com/kb/nmap-scan-open-ports)
+- [How To Scan All Ports With NMap] (https://www.alphr.com/nmap-scan-all-ports/)
+- [Nmap: TCP and UDP port mapping] (https://simplificandoredes.com/en/nmap-tcp-and-udp-port-mapping/)
 
 References:
 
--[Port Scanning] (https://nmap.org/book/port-scanning-tutorial.html)
+- [Port Scanning] (https://nmap.org/book/port-scanning-tutorial.html)
 
 # Learning Objectives
-
 
     How to Use Nmap for Advanced Port Scans?
     What are the Different Types of Advanced Port Scans?
@@ -35,8 +34,7 @@ References:
 
 
 
-
-# Solve the task.
+# Solve the tasks.
 
 Task #0
 
@@ -50,6 +48,7 @@ Your script should accept host as an arguments $1.
 
 
 Task #1
+
 A FIN scan is a network reconnaissance technique used to identify open ports on a target machine. It works by sending a TCP packet with only the FIN flag set, which typically signifies the end of a connection. By analyzing the target's response, attackers can determine if a port is open, closed, or filtered by a firewall.
 
 FIN scans are attractive because they can sometimes bypass basic firewalls and offer a stealthier approach compared to traditional methods.
@@ -59,6 +58,7 @@ Write a bash script that executes a FIN scan on a test network.The scan should i
 Your script should accept host as an arguments $1.
 Your script should use packet fragmentation to evade packet filters.
 Your script should Adjust the timing option to 2 to reduce scan detectability.
+
 
 Task #2
 
@@ -89,7 +89,11 @@ Write a bash script that executes a Maimon scan on a test network.The scan shoul
 Your script should accept host as an arguments $1.
 Your script should scan ports with high verbosity.
 
+
 Task #4
+
+4. TCP ACK scans: When you knock on the firewall's door just to see who yells back!
+
 The TCP ACK scan is a network probing technique used primarily to determine the filtering rules of a firewall. By sending a packet with the ACK flag set to various ports, and observing whether the target responds with an RST packet, security professionals can infer whether ports are statefully inspected.
 
 You are a network administrator responsible for verifying the firewall rules for a newly deployed section of your corporate network. Before deploying critical services, you want to ensure that the firewall is properly filtering unexpected external ACK packets, which should all be blocked or filtered to enhance security against potential reconnaissance activities by attackers.
@@ -100,6 +104,7 @@ Your script should accept host as an arguments $1.
 Your script should accept ports as an arguments $2.
 Your script should display the reason each port is set to a specific state.
 Your script should enforce a time limit of 1000 milliseconds for each host response.
+
 
 Task #5
 
