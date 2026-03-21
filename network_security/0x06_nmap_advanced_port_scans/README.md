@@ -49,6 +49,8 @@ Your script should accept host as an arguments $1.
 
 Task #1
 
+1. FIN scans: like ghost-knocking on digital doors!
+
 A FIN scan is a network reconnaissance technique used to identify open ports on a target machine. It works by sending a TCP packet with only the FIN flag set, which typically signifies the end of a connection. By analyzing the target's response, attackers can determine if a port is open, closed, or filtered by a firewall.
 
 FIN scans are attractive because they can sometimes bypass basic firewalls and offer a stealthier approach compared to traditional methods.
