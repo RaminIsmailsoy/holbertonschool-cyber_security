@@ -1,0 +1,14 @@
+Usage
+Compile and run the test program:
+
+gcc -Wall -pedantic -Werror -Wextra main.c -o main
+./main
+In another terminal, find the PID of the running program:
+
+ps aux | grep ./main
+Use the script to modify the string in memory:
+
+sudo python3 ./read_write_heap.py <PID> <search_string> <replace_string>
+Example:
+
+sudo python3 ./read_write_heap.py 6515 Holberton "Test"
