@@ -10,18 +10,15 @@ def usage():
 
 def read_write_heap(pid, search_string, replace_string):
     try:
-        # Validate PID
         pid = int(pid)
     except ValueError:
         print("Error: PID must be an integer.")
         usage()
 
-    # Paths to memory maps and memory
     maps_path = f"/proc/{pid}/maps"
     mem_path = f"/proc/{pid}/mem"
 
     try:
-        # Open the memory maps file
         with open(maps_path, "r") as maps_file:
             heap = None
             for line in maps_file:
@@ -33,17 +30,12 @@ def read_write_heap(pid, search_string, replace_string):
                 print("Error: Could not find the heap segment.")
                 sys.exit(1)
 
-            # Extract start and end addresses of the heap
             heap_start, heap_end = [int(x, 16) for x in heap.split()[0].split("-")]
 
-        # Open the memory file for reading and writing
         with open(mem_path, "r+b") as mem_file:
-            # Seek to the start of the heap
             mem_file.seek(heap_start)
-            # Read heap content
             heap_data = mem_file.read(heap_end - heap_start)
 
-            # Search for the target string
             search_bytes = search_string.encode()
             replace_bytes = replace_string.encode()
 
@@ -56,7 +48,6 @@ def read_write_heap(pid, search_string, replace_string):
                 print("Error: Search string not found in the heap.")
                 sys.exit(1)
 
-            # Replace the string
             mem_file.seek(heap_start + offset)
             mem_file.write(replace_bytes.ljust(len(search_bytes), b'\x00'))
 
@@ -72,7 +63,6 @@ def read_write_heap(pid, search_string, replace_string):
         print(f"Unexpected error: {e}")
         sys.exit(1)
 
-# Main logic
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         usage()
