@@ -1,27 +1,14 @@
 #!/usr/bin/env python3
-"""
-A script to find and replace a string in the heap memory of a running process.
-
-Usage:
-    ./read_write_heap.py pid search_string replace_string
-
-Arguments:
-    pid: The process ID to inspect.
-    search_string: The string to search for in the heap.
-    replace_string: The string to replace it with.
-"""
 
 import os
 import sys
 import re
 
 def usage():
-    """Print usage message and exit with status code 1."""
     print("Usage: ./read_write_heap.py pid search_string replace_string")
     sys.exit(1)
 
 def read_write_heap(pid, search_string, replace_string):
-    """Find and replace a string in the heap of a process."""
     try:
         # Validate PID
         pid = int(pid)
@@ -41,7 +28,7 @@ def read_write_heap(pid, search_string, replace_string):
                 if "[heap]" in line:
                     heap = line
                     break
-            
+
             if not heap:
                 print("Error: Could not find the heap segment.")
                 sys.exit(1)
@@ -89,7 +76,7 @@ def read_write_heap(pid, search_string, replace_string):
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         usage()
-    
+
     pid = sys.argv[1]
     search_string = sys.argv[2]
     replace_string = sys.argv[3]
