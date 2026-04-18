@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -E "new user" auth.log |awk '{sub("name=", "", $8); sub(",", "", $8); print $8}'| sort | uniq | paste -s
+egrep "useradd" auth.log | sed 's/.*name=//' | cut -d',' -f1 | sort -u | paste -sd,
