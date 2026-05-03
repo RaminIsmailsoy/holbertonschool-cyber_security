@@ -1,0 +1,1 @@
+<iframe src=“127.0.0.1/admin/list-of-items”> </iframe>
