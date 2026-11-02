@@ -1,0 +1,59 @@
+
+Insecure Direct Object Reference
+
+Introduction
+
+Web applications often appear secure but fail to verify if a user is authorized to access specific data. By manipulating object references (URLs, APIs), students learn to detect Insecure Direct Object References (IDOR). This builds analytical skills and highlights the critical difference between input validation and access control.
+Context
+
+While testing the CyberBank simulation, Mary discovered that changing an account ID in a request exposed another user's financial data. The system failed to verify ownership. Mary documented this authorization flaw across multiple endpoints, learning that effective security testing identifies weak access controls to protect users before a breach occurs.
+Resources
+Read or watch:
+
+    Insecure direct object references (IDOR)
+    All About Insecure Direct Object Reference(IDOR)
+    Insecure Direct Object Reference (IDOR) Explained
+    IDOR ? Ok but what is it finally ?
+    OWASP TOP 10: Insecure Direct Object Reference
+    Insecure Direct Object Reference (IDOR) - A Deep Dive
+    Everything You Need to Know About IDOR
+    Types of IDOR
+    How to find more IDORs
+    IDOR Mitigation Best Practices
+
+References:
+
+    IDOR
+    Testing for IDOR
+    Cheat Sheet
+
+Learning Objectives
+
+
+    What is an IDOR?
+    What does insecure direct object reference mean?
+    How IDOR works?
+    What is the difference between IDOR and other vulnerabilities?
+    How an IDOR Attack Happens?
+    What are the types of IDOR?
+    What is the impact of IDOR?
+    How to detect IDOR vulnerabilities?
+    How to prevent IDOR attacks?
+    What are the IDOR Mitigation Best Practices?
+
+
+https://portswigger.net/web-security/access-control/idor
+https://medium.com/@insightfulrohit/all-about-insecure-direct-object-reference-idor-666cad6a94f0
+https://www.youtube.com/watch?v=rloqMGcPMkI
+https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Finfosecwriteups.com%2Fidor-insecure-direct-object-references-my-first-p1-in-bugbounty-fb01f50e25df
+https://blog.detectify.com/best-practices/owasp-top-10-insecure-direct-object-reference-4/
+https://hadrian.io/blog/insecure-direct-object-reference-idor-a-deep-dive
+https://www.spiceworks.com/
+https://www.spiceworks.com/#_003
+https://vickieli.medium.com/how-to-find-more-idors-ae2db67c9489
+https://www.spiceworks.com/#_005
+https://portswigger.net/web-security/access-control/idor
+https://wstg.owasp.org/latest/
+https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html
+
+
